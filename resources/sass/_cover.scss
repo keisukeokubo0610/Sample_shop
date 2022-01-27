@@ -1,0 +1,41 @@
+// cover
+.cover {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    @include pc {
+        top: 15rem;
+    }
+}
+
+.cover-wrap {
+    @include flex-center;
+}
+
+.cover-img {
+    .cover-pic {
+        display: flex;
+        vertical-align: bottom;
+        img {
+            z-index: 70;
+            position: relative;
+        }
+    }
+}
+
+.coverletter {
+    z-index: 80;
+    position: absolute;
+    color: $base-color;
+    font-size: 4rem;
+    font-family: Courier;
+    font-weight: bold;
+    // text-shadow: 0 0 3px rgba(0, 0, 2px, 0.4);
+    @include flex-center;
+    @include pc {
+        font-size: 8rem;
+    }
+    .cover-title {
+        margin: 0;
+    }
+}

@@ -1,0 +1,84 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1;
+    background-color: $base-color;
+    // background-color: $key-color1;
+    @include pc {}
+}
+
+a {
+    color: $sub-color1;
+    text-decoration: none;
+}
+
+//トップページのメイン
+.main {
+    position: relative;
+    top: 5rem;
+    @include pc {
+        width: 70%;
+        position: relative;
+        top: -3rem;
+    }
+}
+
+//サブページのメイン
+.sub-main {
+    position: relative;
+    top: 5rem;
+    @include pc {
+        width: 70%;
+        position: relative;
+        top: 15.5rem;
+    }
+}
+
+.space {
+    margin-left: .5rem;
+    @include pc {
+        margin-left: 3rem;
+    }
+}
+
+.half-space {
+    margin-left: 1rem;
+}
+
+.bottom {
+    margin-bottom: 1.4rem;
+}
+
+.pc-page {
+    @include pc-page;
+}
+
+.sp-page {
+    @include sp-page;
+}
+
+// 文字を黒くする
+.black {
+    p {
+        @include black;
+    }
+}
+
+.black-sns {
+    @include black;
+}
+
+// カラーのみ変更
+.gray {
+    background-color: $gray;
+}
+
+hr {
+    width: 100%;
+    margin: 1rem 0 8rem 0;
+    color: $sub-color2;
+}

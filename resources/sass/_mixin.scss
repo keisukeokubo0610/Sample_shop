@@ -1,0 +1,38 @@
+// mixin記述
+@mixin pc {
+    @media (min-width: 769px) {
+        @content;
+    }
+}
+
+// SPページ用
+@mixin sp-page {
+    display: block;
+    @include pc {
+        display: none;
+    }
+}
+
+// PCページ用
+@mixin pc-page {
+    display: none;
+    @include pc {
+        display: block;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin black {
+    color: $sub-color2!important;
+}

@@ -1,0 +1,27 @@
+#topBtn {
+    color: #f3f3f3;
+    position: fixed;
+    left: -3rem;
+    bottom: 9rem; //ボタンの高さ
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @include pc {
+        left: 5rem;
+        bottom: 20rem; //ボタンの高さ
+    }
+    p {
+        cursor: pointer;
+        margin: 1rem 0 3rem 0;
+        font-size: 3rem;
+        font-family: Courier;
+        @include pc {
+            font-size: 4rem;
+        }
+    }
+    p:hover {
+        color: #c2c2c2;
+    }
+}

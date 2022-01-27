@@ -1,0 +1,161 @@
+// shopとbottom
+//shop
+.bottom-contents {
+    position: relative;
+    top: 5rem;
+}
+
+.bottomshopping {
+    background-color: $sub-color2!important;
+    margin: 0 .5rem 1.5rem .5rem !important;
+    p {
+        color: $base-color!important;
+    }
+}
+
+// ショッピングサイトを探す
+.shop {
+    .shop-intro {
+        @include flex-center;
+        padding: 4rem 0;
+        @include pc {
+            padding: 7rem 0 10rem 0;
+        }
+        p {
+            font-size: 1.8rem;
+            color: $sub-color2;
+            margin: 0;
+            @include pc {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+//main-bottom部分
+.main-bottom {
+    width: 100%;
+    background-color: $sub-color2;
+    color: $base-color;
+    display: inline-block;
+    padding: 3.5rem 0 0 0;
+    box-sizing: border-box;
+    @include pc {
+        padding: 6rem 23rem 0 35rem;
+    }
+}
+
+.bottom-container {
+    width: 100%;
+}
+
+.sub-height {
+    @include pc {
+        position: relative;
+        top: 12rem; //コンテンツからボトムは合計10rem
+    }
+}
+
+// メイン下部
+.bottom-wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 4rem;
+}
+
+// アイテム一覧
+.category-wrapper {
+    padding: 0 0 .5rem 2.5rem;
+    @include pc {
+        padding: 0;
+    }
+    .category-title {
+        font-size: 2.5rem;
+        font-family: Courier;
+        margin: 0 0 3.5rem 0;
+        @include pc {
+            font-size: 5rem;
+        }
+    }
+    // カテゴリー
+    .category-container {
+        padding: 0;
+        margin: 0;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); //ボタン青く光らせない
+        li {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+            @include pc {
+                margin-bottom: 2.5rem;
+            }
+            a {
+                .category-menu {
+                    margin: 0;
+                    color: $base-color;
+                    font-size: 1.6rem;
+                    font-family: Courier;
+                    cursor: pointer;
+                    @include pc {
+                        font-size: 3rem;
+                    }
+                }
+                p:hover {
+                    color: #c2c2c2;
+                }
+            }
+        }
+        li:last-child {
+            margin: 0;
+        }
+    }
+}
+
+// SNS
+.sns-wrapper {
+    padding: 6rem 0 0 1.2rem;
+    @include pc {
+        padding: 8.5rem 0 0 15rem;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .site-title {
+        margin: 0 0 2rem 0;
+        font-size: 2rem;
+        font-family: Courier;
+        @include pc {
+            font-size: 5rem;
+        }
+    }
+    .sns-guide {
+        margin: 0 0 2rem 0;
+        font-size: 1.6rem;
+        font-family: Courier;
+        @include pc {
+            font-size: 3rem;
+        }
+    }
+}
+
+.shop-sns {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+        margin-right: 1.6rem;
+        a {
+            font-size: 1.6rem;
+            color: $base-color;
+            cursor: pointer;
+            @include pc {
+                font-size: 3rem;
+            }
+        }
+        a:hover {
+            color: #c2c2c2;
+        }
+    }
+}

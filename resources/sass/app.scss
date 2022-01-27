@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+$base-color:#f3f3f3;
+$sub-color1:#2c2b2b;
+$sub-color2:#484a4e;
+$key-color1:#c1afaf;
+$key-color2:#dbc9ca;
+$key-color3: #600021;
+$gray:#e7e7e7;
+$border: #484a4e;
+// Google Fontsの読み込み
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+// Scssファイルの読み込み
+@import 'mixin';
+@import 'base';
+@import 'common';
+@import 'header';
+@import 'cover';
+@import 'products';
+@import 'topbtm';
+@import 'concept';
+@import 'news';
+@import 'contact';
+@import 'bottom';
+@import 'footer';
+@import 'sidebar';

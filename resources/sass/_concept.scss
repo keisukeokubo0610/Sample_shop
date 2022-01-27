@@ -1,0 +1,102 @@
+.concept-wrapper {
+    @include flex-center;
+    flex-direction: column;
+    @include pc {
+        justify-content: flex-start;
+    }
+    .concept-bg {
+        padding: 0 1.5rem;
+        @include pc {
+            padding: 0;
+        }
+        .concept-pic {
+            img {
+                z-index: 70;
+                border-radius: 1rem;
+                box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    .concept-content {
+        z-index: 80;
+        position: absolute;
+        @include flex-center;
+        flex-direction: column;
+        @include pc {
+            width: 100%;
+        }
+        .concept-title {
+            margin-top: 0;
+            margin-bottom: 4rem;
+            font-size: 3rem;
+            font-family: Courier;
+            font-weight: bold;
+            color: $base-color;
+            @include pc {
+                font-size: 6rem;
+                margin: 10rem 0 6rem 0;
+            }
+        }
+        .concept-text {
+            margin-top: 0;
+            font-size: 2rem;
+            color: $base-color;
+            @include pc {
+                font-size: 4rem;
+                margin-bottom: 3.5rem;
+            }
+        }
+        .concept-text:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+//************* 下層ページ **********
+.sub-page {
+    .concept-wrapper {
+        margin: 8rem 1.5rem 1.4rem;
+        @include pc {
+            margin: 0 6rem 3.5rem 6rem;
+        }
+        .concept-global-container {
+            width: 100%;
+        }
+    }
+}
+
+//************* 文字 ***************
+.concept-contents {
+    position: relative;
+    top: -12rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    z-index: 70;
+    @include pc {
+        top: -28rem;
+    }
+    .sub-concept-title {
+        font-size: 2.4rem;
+        font-family: Courier;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        margin: 0 0 3rem 0;
+        color: $base-color;
+        @include pc {
+            font-size: 6.5rem;
+            margin: 0 0 6rem 0;
+        }
+    }
+    .sub-contact-text {
+        font-size: 1.4rem;
+        font-family: Courier;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        margin: 0;
+        color: $base-color;
+        @include pc {
+            font-size: 4rem;
+        }
+    }
+}

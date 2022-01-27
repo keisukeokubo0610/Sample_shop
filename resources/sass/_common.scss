@@ -1,0 +1,112 @@
+// 背景の円1
+.background-1 {
+    background-color: $key-color1;
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    z-index: 5;
+    @include pc {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+// 背景の円2
+.background-2 {
+    background-color: $key-color2;
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    z-index: 5;
+    @include pc {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+//上にずらす
+.top-move125 {
+    position: relative;
+    top: -12.5rem;
+}
+
+.top-move68 {
+    position: relative;
+    top: -6.8rem;
+}
+
+.top-move136 {
+    position: relative;
+    top: -13.6rem;
+}
+
+.top-margin {
+    margin-top: 5rem;
+}
+
+.bottom-margin {
+    margin-bottom: 5rem;
+}
+
+.last-container {
+    margin-bottom: -12.5rem;
+}
+
+.left-container {
+    width: 100%;
+    display: inline-grid;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.right-container {
+    width: 100%;
+    display: inline-grid;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+//footerとの距離調整
+.index-height-wrapper {
+    @include pc {
+        position: relative;
+        top: 1.3rem;
+    }
+}
+
+.products-height-wrapper {
+    @include pc {
+        position: relative;
+        top: 5.5rem;
+    }
+}
+
+.concept-height-wrapper {
+    position: relative;
+    top: -11.8rem;
+    @include pc {
+        top: 4rem;
+    }
+}
+
+.news-height-wrapper {
+    position: relative;
+    top: -6.5rem;
+    @include pc {
+        top: 15rem;
+    }
+}
+
+.contact-height-wrapper {
+    @include pc {
+        position: relative;
+        top: 15.5rem;
+    }
+}
+
+.contactfinish-height-wrapper {
+    @include pc {
+        position: relative;
+        top: 3.5rem;
+    }
+}

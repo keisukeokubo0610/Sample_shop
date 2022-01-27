@@ -1,0 +1,194 @@
+// お問い合わせ入力ページ
+.contact-wrapper {
+    margin: 8rem 1.5rem 0;
+    @include pc {
+        margin: 0;
+    }
+}
+
+.secondary-container {
+    @include flex-center;
+    @include pc {
+        justify-content: flex-start;
+    }
+    .contact-lead {
+        color: $sub-color2;
+        font-size: 1.5rem;
+        margin: 0 0 6rem 0;
+        @include pc {
+            font-size: 4rem;
+            margin: 0 0 10rem 0;
+        }
+    }
+    .contact-title {
+        color: $sub-color2;
+        font-size: 3rem;
+        font-family: Courier;
+        margin: 0;
+        @include pc {
+            font-size: 5rem;
+            margin: 0 0 4rem 0;
+        }
+    }
+}
+
+.item {
+    width: 100%;
+    .item-heading {
+        margin: 5rem 0 2rem 0;
+        .label {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $sub-color2;
+            @include pc {
+                font-size: 3rem;
+            }
+        }
+        .must {
+            margin-left: 2rem;
+            padding: .7rem 1.8rem;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: $base-color;
+            background-color: $sub-color2;
+            @include pc {
+                font-size: 3rem;
+                padding: 1rem 3rem;
+                margin: 6rem 0 4rem 4rem;
+            }
+        }
+    }
+}
+
+.inputs {
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(#000000, 0.5);
+    @include pc {
+        width: 60rem;
+        height: 8rem;
+    }
+}
+
+textarea {
+    width: 100%;
+    height: 15rem;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(#000000, 0.5);
+    @include pc {
+        height: 40rem;
+    }
+}
+
+.submitBtm {
+    margin: 6.5rem 0 10rem 0;
+    width: 100%;
+    @include flex-center;
+    @include pc {}
+    input {
+        border: none;
+    }
+    .submit {
+        padding: 1.3rem 3rem;
+        box-sizing: border-box;
+        font-size: 1.8rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        color: $base-color;
+        background-color: $sub-color2;
+        @include pc {
+            font-size: 3.5rem;
+            padding: 2.5rem 5.5rem;
+        }
+    }
+}
+
+//お問い合わせ完了ページ
+.sub-contact-wrapper {
+    margin: 10rem 1.5rem 0;
+    @include pc {
+        margin: 0;
+    }
+}
+
+.contact-lead-container {
+    @include flex-center;
+    // margin-bottom: 5rem;
+    .sub-contact-lead {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $sub-color2;
+        text-align: center;
+        margin: 0;
+        @include pc {
+            font-size: 5.5rem;
+        }
+    }
+}
+
+.contact-contents {
+    width: 100%;
+    position: relative;
+    top: 3rem;
+    z-index: 70;
+    @include pc {
+        top: 10rem;
+    }
+    .sub-contact-text {
+        width: 100%;
+        font-size: 1.5rem;
+        color: $sub-color2;
+        text-align: center;
+        margin: 3rem 0 0 0;
+        line-height: 2;
+        display: flex;
+        justify-content: center;
+        @include pc {
+            font-size: 4rem;
+            position: relative;
+            top: 5rem;
+            margin: 0;
+        }
+    }
+}
+
+.contact-topbtm {
+    position: relative;
+    right: 6.8rem;
+    top: -2rem;
+    z-index: 70;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    @include pc {
+        right: 18rem;
+    }
+    .sub-contact-btn {
+        color: $base-color;
+        background-color: $sub-color2;
+        text-align: center;
+        border-radius: 1rem;
+        margin: 0;
+        padding: 1.5rem 2.2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        @include pc {
+            font-size: 3.5rem;
+            padding: 2.5rem 3.6rem;
+        }
+    }
+}
+
+.inline-block {
+    display: inline-block;
+}
