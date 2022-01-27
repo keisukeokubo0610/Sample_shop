@@ -10,6 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+          
+
         <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -17,6 +19,7 @@
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <meta name="description" content="@yield('description')">
         {{-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> --}}
+        
     </head>
 
     <header>
@@ -25,7 +28,7 @@
                 <div class="header-width">
                     <!-- サイトロゴ -->
                     <div class="header-img">
-                        <a href="index.html" class="logo">
+                        <a href="{{ route('index') }}" class="logo">
                             <img src="./images/logo/logo.png" alt="サイトロゴ">
                         </a>
                     </div>
@@ -37,8 +40,8 @@
                 <nav class="sp-nav sp-page">
                     <ul class="sp-nav-list">
                         <li><a href="{{ route('productList') }}">Products</a></li>
-                        <li><a href="">Concept</a></li>
-                        <li><a href="">News</a></li>
+                        <li><a href="{{ route('concept') }}">Concept</a></li>
+                        <li><a href="{{ route('news') }}">News</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
     
@@ -70,8 +73,8 @@
                 <nav class="pc-nav pc-page">
                     <ul class="pc-nav-list">
                         <li><a href="{{ route('productList') }}">Products</a></li>
-                        <li><a href="">Concept</a></li>
-                        <li><a href="">News</a></li>
+                        <li><a href="{{ route('concept') }}">Concept</a></li>
+                        <li><a href="{{ route('news') }}">News</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>

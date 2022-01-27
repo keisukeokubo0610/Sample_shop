@@ -19,6 +19,19 @@ Route::get('/', function () {
 });
 
 
+// Top画面
+Route::get('/',[ProductController::class,'viewIndex'])
+->name('index');
+
+// 商品一覧画面
 Route::get('/productList',[ProductController::class,'viewProductList'])
 ->name('productList');
+
+// コンセプト画面
+Route::get('/concept',[ProductController::class,'viewConcept'])
+->name('concept');
+
+// ニュース画面
+Route::get('/news',[ProductController::class,'viewNews'])
+->name('news');
 

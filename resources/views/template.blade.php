@@ -10,8 +10,9 @@
     <div id="wrapper">
         @yield('content')
     </div>
+    
     <footer>
-        <!-- 省略 -->
+        @yield('footer')
     </footer>
 
 
